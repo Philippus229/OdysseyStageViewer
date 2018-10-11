@@ -1,0 +1,6 @@
+All of the required libraries can be installed with pip:
+- sortedcontainers
+- PyYAML
+- Pygame
+- PyOpenGL
+- byml
