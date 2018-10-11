@@ -54,13 +54,9 @@ class OBJ:
             if values[0] == 'v':
                 v = list(map(float, values[1:4]))
                 '''Old code without rotation that works:'''
-                v0 = (math_cos(obj_data[1][1])*-v[0])-(math_sin(obj_data[1][1])*-v[2]);
-                v2 = (math_cos(obj_data[1][1])*-v[2])+(math_sin(obj_data[1][1])*-v[0]);
-                v1 = -((math_cos(obj_data[1][0])*-v[1])-(math_sin(obj_data[1][0])*-v2));
-                v2 = (math_cos(obj_data[1][0])*-v2)+(math_sin(obj_data[1][0])*-v[1]);
-                v = [v0*obj_data[2][0]+obj_data[0][0],
-                     v1*obj_data[2][1]+obj_data[0][1],
-                     v2*obj_data[2][2]+obj_data[0][2]]
+                v = [v[0]*obj_data[2][0]+obj_data[0][0],
+                     v[1]*obj_data[2][1]+obj_data[0][1],
+                     v[2]*obj_data[2][2]+obj_data[0][2]]
                 
                 '''New code that I need to fix:
                 tX = math_cos(obj_data[1][1])*v[0]-math_sin(obj_data[1][1])*v[2]
@@ -78,13 +74,9 @@ class OBJ:
             elif values[0] == 'vn':
                 v = list(map(float, values[1:4]))
                 '''Old code without rotation that works:'''
-                v0 = (math_cos(obj_data[1][1])*-v[0])-(math_sin(obj_data[1][1])*-v[2]);
-                v2 = (math_cos(obj_data[1][1])*-v[2])+(math_sin(obj_data[1][1])*-v[0]);
-                v1 = -((math_cos(obj_data[1][0])*-v[1])-(math_sin(obj_data[1][0])*-v2));
-                v2 = (math_cos(obj_data[1][0])*-v2)+(math_sin(obj_data[1][0])*-v[1]);
-                v = [v0*obj_data[2][0]+obj_data[0][0],
-                     v1*obj_data[2][1]+obj_data[0][1],
-                     v2*obj_data[2][2]+obj_data[0][2]]
+                v = [v[0]*obj_data[2][0]+obj_data[0][0],
+                     v[1]*obj_data[2][1]+obj_data[0][1],
+                     v[2]*obj_data[2][2]+obj_data[0][2]]
                 
                 '''New code that I need to fix:
                 tX = math_cos(obj_data[1][1])*v[0]-math_sin(obj_data[1][1])*v[2]
