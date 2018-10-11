@@ -9,7 +9,6 @@ An unfinished remake of Odyssey Editor in Python
 - byml
 
 ## Credits
-- BNTX Extractor, SARCExtract & Embedd Extractor by AboodXD (https://github.com/aboood40091)
-- texconv from DirectXTex by Microsoft (https://github.com/Microsoft/DirectXTex)
-- OBJFileLoader from the pygame wiki (https://www.pygame.org/wiki/OBJFileLoader)
-- BFRES2OBJ (https://github.com/Philippus229/BFRES2OBJ)
+- Aboood40091 for BNTX Extractor, SARCExtract & Embedd Extractor
+- Microsoft for texconv.exe from DirectXTex
+- someone from the pygame wiki for OBJFileLoader
